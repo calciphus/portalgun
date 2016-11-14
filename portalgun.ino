@@ -24,9 +24,8 @@ volatile byte reading = 0; //somewhere to store the direct values we read from o
 
 // Add dimensions here, update both the count and the array below
 String current = "C137"; // Default dimension
-int dimensionCount = 5;
-char const* dimensions[]={"C137", "J19A", "D18B","0XFF","46'\\"};
-
+int dimensionCount = 53;
+char const* dimensions[]={"C137","J19Z","46'\\","FART","304X","35-C","D18B","0XFF","C132","C500","R2D2","9DUT","QB3D","GWGZ","P51W","ALQQ","T5'V","YXVK","8-V8","PNY2","PQCC","65SN","J3NI","J-37","08CB","QIMV","5-CL","C3P0","SJ-9","4-W6","ZBVF","J9KS","NBJP","WU7L","ICUP","5GYA","JMR3","G32T","4ZTV","3VXC","5C-V","5CXS","LEYN","NPMF","P15R","3JRS","A-8W","VV2P","I225","99D9","K7RH","SEXY","RICK"};
 
 void setup() {
   // Setup for Serial Display  
