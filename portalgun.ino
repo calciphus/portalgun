@@ -25,7 +25,7 @@ volatile byte reading = 0; //somewhere to store the direct values we read from o
 // Add dimensions here, update both the count and the array below
 String current = "C137"; // Default dimension
 int dimensionCount = 53;
-char const* dimensions[]={"C137","J19Z","46'\\","FART","304X","35-C","D18B","0XFF","C132","C500","R2D2","9DUT","QB3D","GWGZ","P51W","ALQQ","T5'V","YXVK","8-V8","PNY2","PQCC","65SN","J3NI","J-37","08CB","QIMV","5-CL","C3P0","SJ-9","4-W6","ZBVF","J9KS","NBJP","WU7L","ICUP","5GYA","JMR3","G32T","4ZTV","3VXC","5C-V","5CXS","LEYN","NPMF","P15R","3JRS","A-8W","VV2P","I225","99D9","K7RH","SEXY","RICK"};
+char const* dimensions[]={"C137","J19Z","46'\\","35-C","C132","C500","304X","R2D2","D18B","0XFF","9DUT","QB3D","GWGZ","P51W","ALQQ","T5'V","YXVK","8-V8","PNY2","FART","PQCC","65-N","J3NI","J-37","08CB","QIMV","5-CL","C3P0","SJ-9","4-W6","ZBVF","J9KS","NBJP","WU7L","ICUP","5GYA","JMR3","G32T","4ZTV","3VXC","5C-V","5CXS","LEYN","NPMF","P15R","3JRS","A-8W","VV2P","I225","99D9","K7RH","53-X","RICK"};
 
 void setup() {
   // Setup for Serial Display  
@@ -45,7 +45,7 @@ void setup() {
   attachInterrupt(1,PinB,RISING); // set an interrupt on PinB, looking for a rising edge signal and executing the "PinB" Interrupt Service Routine (below)
 
   // Serial needed for Debugging
-  Serial.begin(9600);  
+  //Serial.begin(9600);  
   
 }
 
@@ -77,13 +77,12 @@ void PinB(){
 void loop() {
   
   if(oldEncPos != encoderPos) {
-    Serial.println("Detected Change");
-    Serial.println(encoderPos);
     oldEncPos = encoderPos;  
     int scopedPosition = encoderPos % dimensionCount;
     
     current = dimensions[scopedPosition];
-    Serial.println(scopedPosition);
+    //Serial.println(encoderPos);
+    //Serial.println(scopedPosition);
   
   
     // Write individual characters to screen from current string
