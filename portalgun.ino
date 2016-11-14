@@ -24,8 +24,8 @@ volatile byte reading = 0; //somewhere to store the direct values we read from o
 
 // Add dimensions here, update both the count and the array below
 String current = "C137"; // Default dimension
-int dimensionCount = 53;
-char const* dimensions[]={"C137","J19Z","46'\\","35-C","C132","C500","304X","R2D2","D18B","0XFF","9DUT","QB3D","GWGZ","P51W","ALQQ","T5'V","YXVK","8-V8","PNY2","FART","PQCC","65-N","J3NI","J-37","08CB","QIMV","5-CL","C3P0","SJ-9","4-W6","ZBVF","J9KS","NBJP","WU7L","ICUP","5GYA","JMR3","G32T","4ZTV","3VXC","5C-V","5CXS","LEYN","NPMF","P15R","3JRS","A-8W","VV2P","I225","99D9","K7RH","53-X","RICK"};
+int dimensionCount = 64;
+char const* dimensions[]={"C137","J19Z","46'\\","35-C","C132","C500","304X","R2D2","D18B","0XFF","00ES","1-KZ","PA5B","97Q6","6SIS","OQ\3","JJ-M","C837","5KO/","V\\H5","VDMG","00A0","XMR9","M6YB","E8'W","IZ2/","GAV0","CW'A","AFYK","B7C/","V5FO","KW9\\","B63B","J/DP","6FU/","4TYU","0P28","NR'N","CKB5","BD5K","4D9X","2D-J","WT/Z","PKEC","NS04","JUEO","2Q/7","9FU4","QWWK","0'ZI","EFPV","Y/K6","HRNA","'VSP","VV3/","JCNP","ZA1X","HCQN","64FF","RDGU","L0L4","VJ4/","KA3V","RICK"};
 
 void setup() {
   // Setup for Serial Display  
